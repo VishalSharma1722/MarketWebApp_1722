@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_Market</title>
+    <link rel="icon" href="photo.jpeg">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        .box {
+            width: 70%;
+            height: 80%;
+            margin: auto;
+            border-radius: 3%;
+            background-color: rgb(219, 219, 224);
+            box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.3);
+        }
+        .heading {
+            text-align: center;
+            padding: 1px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border-radius: 1%;
+        }
+        .basebody {
+            display: flex;
+            height: 60%;
+        }
+        p{
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 5px;
+        }
+        .left {
+            width: 50%;
+            height: 100%;
+            background-color: rgb(235, 229, 229);
+            
+        }
+        .b1, .b2, .b3 {
+            display: block;
+            height: 20%;
+            width: 80%;
+            margin: 34px auto;
+            border-radius: 15px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .b1:hover, .b2:hover, .b3:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        .right{
+            width: 50%;
+            height: 100%;
+            background-color: rgb(235, 229, 229);
+            
+        }
+        .b4, .b5, .b6 {
+            display: block;
+            height: 20%;
+            width: 80%;
+            margin: 34px auto;
+            border-radius: 15px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .b4:hover, .b5:hover, .b6:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        
+        .footer {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .footer p {
+            margin-top: 3%;
+            padding: 5px;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="heading">
+            <h1>WELCOME TO MY SHOP</h1>
+        </div>
+        <p class="fp">This is a nice day for shopping, enjoy shopping😊😉.</p>
+        <div class="basebody">
+            <div class="left">
+                <button class="b1">1. Add a product</button>
+                <button class="b2">2. Print product list</button>
+                <button class="b3">3. Sell a product</button>
+            </div>
+            <div class="right">
+                    <button class="b4">4. Update Product Price</button>
+                    <button class="b5">5. Update Product Quantity</button>
+                    <button class="b6">6. Delete Product from list</button>
+            </div>
+        </div>
+      
+        <div class="footer">
+            <p>Thank you for Shopping, visit Again 😊😊😊.</p>
+        </div>
+    </div>
+    <script>
+        let b1 = document.querySelector('.b1');
+        let b2 = document.querySelector('.b2');
+        let b3 = document.querySelector('.b3');
+        let b4 = document.querySelector('.b4');
+        let b5 = document.querySelector('.b5');
+        let b6 = document.querySelector('.b6');
+        let exit = document.querySelector('.exit button');
+        b1.addEventListener('click', () => {
+            window.location.href = 'add.html';
+        });
+        b2.addEventListener('click', () => {
+            window.location.href = 'PrintProduct1.jsp';
+        });
+        b3.addEventListener('click', () => {
+            window.location.href = 'sellProduct.html';
+        });
+        b4.addEventListener('click', () => {
+            window.location.href = 'updatePrice.html';
+        });
+        b5.addEventListener('click', () => {
+            window.location.href = 'updateuantity.html';
+        });
+        b6.addEventListener('click', () => {
+            window.location.href = 'deleteProduct.html';
+        });
+        
+    </script>
+</body>
+</html>

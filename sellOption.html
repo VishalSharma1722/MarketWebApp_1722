@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More_Option</title>
+    <link rel="icon" href="photo.jpeg">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f1f1f1;
+        }
+        h1{
+
+            color: #333;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 10%;
+        }
+        .box{
+            width: 350px;
+            height: 250px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        .b1,.b2{
+            
+            width: 200px;
+            height: 50px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            
+        }
+        .b1:hover,.b2:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+            background-color: #f70abb;
+        }
+        /*
+        .b3{
+            width: 70px;
+            height: 30px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            
+        }
+      
+        .b3:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+            background-color: #f70abb;
+        }
+          */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Choose a option for Process 😊😊.</h1>
+        <button class="b1">Add More</button>
+        <button class="b2">Generate Invoice</button>
+    <!--    <button class="b3">Back</button>   --> 
+    </div>
+    
+    <script>
+        let b1 = document.querySelector('.b1');
+        let b2 = document.querySelector('.b2');
+        b1.addEventListener('click',()=>{
+            window.location.href = 'sellProduct1.html';
+        });
+        b2.addEventListener('click',()=>{
+            window.location.href = 'GenerateInvoice.jsp';
+        });
+        /*
+        b3.addEventListener('click',()=>{
+        	
+        });
+        */
+    </script>
+</body>
+</html>
